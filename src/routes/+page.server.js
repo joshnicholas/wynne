@@ -1,6 +1,8 @@
 import { readFileSync } from 'fs';
 import { parse } from 'csv-parse/sync';
 
+export const prerender = true;
+
 function simplifyMedium(raw) {
 	if (!raw) return '';
 	const m = raw.toLowerCase();

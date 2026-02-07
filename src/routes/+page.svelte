@@ -111,14 +111,14 @@
 
 	<div class="hint-top">
 		<span class="hint-arrow rotate-left">&uarr;</span>
-		<span>Swipe horizontally to change year</span>
+		<span>Swipe to change year</span>
 		<span class="hint-arrow rotate-right">&uarr;</span>
 	</div>
 
 	<div class="hint-left">
 		<!-- <span class="hint-arrow">&darr;</span> -->
 				<span class="hint-arrow rotate-left">&uarr;</span>
-		<span>Swipe vertically for finalists</span>
+		<span>Swipe for other finalists</span>
 		<!-- <span class="hint-arrow">&uarr;</span> -->
 		 		<span class="hint-arrow rotate-right">&uarr;</span>
 	</div>
