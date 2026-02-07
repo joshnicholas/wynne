@@ -124,6 +124,7 @@
 	</div>
 
 	<div class="year-indicator">
+		<span class="count-spacer"></span>
 		<span>{currentYear.year}</span>
 		<span class="count">{imageIndex + 1}/{totalImages}</span>
 	</div>
@@ -203,18 +204,16 @@
 
 	.hint-left {
 		position: absolute;
-		left: 0;
-		top: 0;
-		bottom: 0;
+		right: 0;
+		top: 20%;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-start;
 		gap: 8px;
 		padding: 0 12px;
 		font-size: 14px;
 		opacity: 0.5;
 		writing-mode: vertical-lr;
-		transform: rotate(180deg);
 	}
 
 	.hint-arrow {
@@ -249,14 +248,25 @@
 		flex-shrink: 0;
 	}
 
+	.year-indicator .count-spacer,
+	.year-indicator .count {
+		flex: 1;
+	}
+
+	.year-indicator .count-spacer {
+		visibility: hidden;
+	}
+
 	.year-indicator .count {
 		font-weight: 400;
 		opacity: 0.5;
+		text-align: right;
 	}
 
 	.filter-row {
 		padding: 4px 16px 8px;
 		flex-shrink: 0;
+		text-align: center;
 	}
 
 	.filter-wrapper {
